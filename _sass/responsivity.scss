@@ -1,0 +1,54 @@
+/* TABLET LANDSCAPE */ 
+@media screen and (max-width: 1024px) {
+   :root {
+    --padding-container-xs: var(--sz-xxs);
+    --padding-container-sm: var(--sz-xs);
+    --padding-container-md: var(--sz-sm);
+    --padding-container-lg: var(--sz-md);
+  }
+}
+
+/* TABLET PORTRAIT */ 
+@media screen and (max-width: 768px) {
+   :root {
+    --flex-direction: column;
+    --flex-direction-alternate: column;
+    --image-height: 320px;
+
+    --font-size-body-md: 24px;
+    --font-size-body-rg: 16px;
+    --font-size-body-sm: 12px;
+    --font-size-body-xs: 8px;
+    --line-height-body-md: 36px;
+    --line-height-body-rg: 24px;
+    --line-height-body-sm: 16px;
+    --line-height-body-xs: 12px;
+  }
+}
+
+/* MOBILE */ 
+@media screen and (max-width: 640px) {
+   :root {
+    --padding-container-xs: var(--sz-xxxs);
+    --padding-container-sm: var(--sz-xxs);
+    --padding-container-md: var(--sz-xs);
+    --padding-container-lg: var(--sz-sm);
+
+    --font-size-heading-lg: 28px;
+    --font-size-heading-md: 24px;
+    --font-size-heading-rg: 20px;
+    --font-size-heading-sm: 16px;
+    --font-size-heading-xs: 12px;
+
+    --font-size-heading-lg: 30px;
+    --font-size-heading-md: 20px;
+    --font-size-heading-rg: 18px;
+    --font-size-heading-sm: 14px;
+    --font-size-heading-xs: 12px;
+    --line-height-heading-lg: 36px;
+    --line-height-heading-md: 24px;
+    --line-height-heading-rg: 20px;
+    --line-height-heading-sm: 16px;
+    --line-height-heading-xs: 14px;
+  }
+}

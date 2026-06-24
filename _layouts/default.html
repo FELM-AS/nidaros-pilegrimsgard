@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="colored">
+      <div class="container">
+        <div class="content border centered">
+          <h1 class="logo">Nidaros<br>Pilegrimsgård</h1>
+          <hr class="full">
+          <nav class="list">
+            {% for action in page.cta %}
+              <a class="button {% if forloop.first == true %}primary{% endif %}" href="{{ action.url }}"> {{ action.title }}</a>
+            {% endfor %}
+          </nav>
+        </div>
+      </div>
+    </section>
+    <section id="pilegrimsgarden">
+      <div class="container">
+        <div class="content">
+          <h2>Velkommen til Pilegrimsgården</h2>
+          <hr>
+          <p>Nidaros Pilegrimsgård tilbyr sentralt og fredelig overnatting i hjertet av Trondheim, med Nidarosdomen som nærmeste nabo og Nidelven rett utenfor døren. Våre lyse og komfortable rom gir deg et stille pusterom – perfekt for både weekendgjester, forretningsreisende og pilegrimer som ønsker et opphold med sjel.</p>
+          <p>Hos oss får du en sjelden kombinasjon av historisk atmosfære, moderne fasiliteter og personlig vertskap. Start dagen med en rolig frokost i hagen, nyt utsikten mot elven, og opplev hvor lett det er å utforske byen til fots fra vår unike beliggenhet.</p>
+          <p>Enten du reiser alene, som par eller i gruppe, er Pilegrimsgården et sted hvor du kan senke skuldrene og kjenne på roen – midt i sentrum.</p>
+        </div>
+      </div>
+    </section>
+    <section id="pilegrimsmottak">
+      <div class="container">
+        <div class="content border">
+            <h3>Pilegrimsmottak</h3>
+            <p>I pilegrimsmottaket kan du få de siste stemplene i pilegrimspasset, motta Olavsbrevet og få pilegrimsreisen registrert.</p>
+            <p>I 2026 er mottaket åpent hver dag kl. 14.00 - 17.45 fram til 15. september (egne åpningstider i dagene rundt Olsok 29. juli). Mottaket er bemannet av frivillige fra Pilegrimsfellesskapet St. Olav – Nidaros.</p>
+            <nav class="list">
+              <a href="https://www.pilegrimsleden.no/interessepunkter/pilegrimsmottak-besokssenteret-ved-nidarosdomen" target="_blank">Mer om pilegrimsmottaket</a>
+              <a href="https://www.pilegrimsleden.no/regionale-pilegrimssenter/pilegrimssenter-trondheim" target="_blank">Regionalt Pilegrimssenter Trondheim</a>
+            </nav>
+        </div>
+      </div>
+    </section>
+    <footer class="colored">
+      <hr>
+      <h4>Nidaros Pilegrimsgård</h4>
+      <dl>
+        <dt>Org.nr.:</dt><dd>925 059 676</dd>
+        <dt>Epost:</dt><dd><a href="mailto:pilegrimsgarden@felm.no">pilegrimsgarden@felm.no</a></dd>
+        <dt>Telefon:</dt><dd><a href="tel:+4748232616">48 23 26 16</a></dd>
+        <dt>Adresse:</dt><dd>Kjøpmannsgata 1, 7013 Trondheim, Norge</dd>
+      </dl>
+    </footer>
+  </body>
+</html>
