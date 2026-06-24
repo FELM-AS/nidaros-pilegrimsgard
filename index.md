@@ -3,7 +3,7 @@ layout: default
 title: "Nidaros Pilegrimsgård"
 cta:
     - title: "Bestill rom"
-      url: "booking.nidarospilegrimsgard.com"
+      url: "https://booking.nidarospilegrimsgard.com"
     - title: "Om Pilegrimsgården"
       url: "#pilegrimsgarden"
     - title: "Pilegrimsmottak"
