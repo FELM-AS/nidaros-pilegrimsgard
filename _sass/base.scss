@@ -7,6 +7,7 @@
     --sz-sm: 24px;
     --sz-md: 48px;
     --sz-lg: 96px;
+    --sz-hg: 192px;
 
     /* Sizes / Padding */
     --padding-container-xs: var(--sz-xs);
@@ -97,15 +98,12 @@ section{
   display: flex;
   flex-direction: var(--flex-direction);
   background: var(--color-surface-page);
+  padding: var(--padding-container-lg);
+  gap: var(--padding-container-lg);
+  box-sizing: border-box;
 
   &:nth-child(even){
     flex-direction: var(--flex-direction-alternate);
-  }
-
-  .container{
-    padding: var(--padding-container-lg);
-    background-size: cover;
-    flex: 1;
   }
 
   &.colored{
@@ -115,29 +113,33 @@ section{
 }
 
 .content{
-  padding: var(--padding-container-lg);
   box-sizing: border-box;
   position: relative;
+  flex: 1;
+  max-width: 640px;
 
   &.border{
     border: var(--border-normal);
+    padding: var(--padding-container-md);
   }
 
-  img{
-    position: absolute;
-    //max-height: var(--image-height);
-    object-fit: cover;
-    top: calc(var(--padding-container-lg) * -1);
-    left: 0;
-    width: calc(100% + (var(--padding-container-lg) * 4));
-    height: 100%;
+  &.centered{
+    margin: auto;
   }
 
   .colored &{
+    background-color: var(--color-surface-blue);
     &.border{
       border: var(--border-width) solid var(--color-border-inverted)
     }
   }
+}
+
+img{
+  max-height: var(--image-height);
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 nav.list{
@@ -193,7 +195,7 @@ a.button{
 }
 
 footer{
-  padding: var(--padding-container-xs) var(--padding-container-lg) var(--padding-container-lg) var(--padding-container-lg);
+  padding: 0 var(--padding-container-lg) var(--padding-container-lg) var(--padding-container-lg);
   box-sizing: border-box;
   background-color:red;
 }
@@ -207,7 +209,7 @@ hr{
     margin: var(--font-size-heading-lg) calc((var(--padding-container-lg) * 2)  * -1);
 
     .border &{
-      margin: var(--font-size-heading-lg) calc(var(--padding-container-lg) * -1);
+      margin: var(--font-size-heading-lg) calc(var(--padding-container-md) * -1);
     }
   }
 
@@ -299,13 +301,16 @@ h1, h2, h3, h4, h5, h6{
 
 h1{
   font-size: var(--font-size-heading-lg);
-  line-height: var(--line-height-heading);
+  line-height: var(--line-height-heading-lg);
   margin: 0 0 var(--font-size-heading-lg) 0;
 
   &.logo{
+    font-size: var(--line-height-heading-lg);
+    line-height: var(--line-height-heading-lg);
     font-family: var(--font-family-serif);
     font-weight: 500;
     text-align: center;
+    margin-top: var(--line-height-heading-lg);
   }
 }
 
