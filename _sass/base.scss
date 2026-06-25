@@ -26,6 +26,7 @@
     /* Layout */
     --flex-direction: row;
     --flex-direction-alternate: row-reverse;
+    --image-width: 640px;
     --image-height: 100%;
 
     /* Colors / Palettes */
@@ -116,7 +117,6 @@ section{
   box-sizing: border-box;
   position: relative;
   flex: 1;
-  max-width: 640px;
 
   &.border{
     border: var(--border-normal);
@@ -137,6 +137,7 @@ section{
 
 img{
   max-height: var(--image-height);
+  max-width: var(--image-width);
   width: 100%;
   object-fit: cover;
   overflow: hidden;
